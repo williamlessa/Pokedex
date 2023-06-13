@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #589cd3, #68e9a8);
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 54%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 19.2%;
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #504949;
+  top: 54.5%;
+  left: 21.8%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+/*
+     Campo para inserir o tipo e outras informações do pokemon 
+.pokemon__info {
+    position: absolute;
+    width: 294px;
+    height: 60px;
+    background-color: #000;
+    top: 72%;
+    left: 13.2%;
+    border-radius: 5px;
+}
+     campo ainda sobre o tipo do pokemon 
+.pokemon__type {
+    position: absolute;
+    font-weight: 500;
+    color: red;
+    top: 72.8%;
+    left: 14.5%;
+}
+*/
+
+.pokemon__name {
+  color: #323a41;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 62.5%;
+  left: 13.5%;
+}
+
+.input__search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #3b3939;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #38434b;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -2px 3px 0 #888, -4px 6px 0 #333
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #494747;
+  box-shadow: -2px 3px 0 #2e2c2c, -4px 6px 0 #000;
+}
+
+/* Utilizei um "hover" para dar um pouco mais de estilo ao botão */
+.button:hover {
+  background-color: #5c5656;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
